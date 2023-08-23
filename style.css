@@ -1,0 +1,32 @@
+body {
+    background-image: url(img/bg-Street.webp);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: cover;
+    animation: animate 5s linear infinite;
+  }
+  @keyframes animate {
+    from {
+        background-position: 0 0;
+    }to {
+        background-position: 1500% 0;
+    }
+  }
+  .box img {
+    width: 280px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    position: absolute;
+    left: 50%;
+  }
+  .box {
+    box-sizing: border-box;
+    display: block;
+  }
+  .box img:hover {
+    transform: translateX(-100%) translateY(-100%);
+  
+  }
+  
